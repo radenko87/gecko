@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.828" height="26.828" viewBox="0 0 26.828 26.828">
+  <g id="поиск" transform="translate(-5.2 -5.2)">
+    <g id="Group_66" data-name="Group 66" transform="translate(5.2 5.2)">
+      <g id="Group_65" data-name="Group 65">
+        <path id="Path_81" data-name="Path 81" d="M13.917,7.029a6.888,6.888,0,1,1-6.888,6.888,6.843,6.843,0,0,1,6.888-6.888m0-1.829a8.717,8.717,0,1,0,8.717,8.717A8.715,8.715,0,0,0,13.917,5.2Z" transform="translate(-5.2 -5.2)" fill="#fff"/>
+      </g>
+    </g>
+    <line id="Line_15" data-name="Line 15" x2="2.012" y2="2.012" transform="translate(19.495 19.435)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+    <line id="Line_16" data-name="Line 16" x1="7.193" y1="7.193" transform="translate(22.007 22.007)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+  </g>
+</svg>
