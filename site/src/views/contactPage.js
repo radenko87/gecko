@@ -70,7 +70,7 @@ class ContactPage extends Component {
             formLoading: true
         }, () => {
 
-            fetch('http://localhost:4000/contact', {
+            fetch('http://159.223.28.42:4000/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -115,7 +115,7 @@ class EventsPage extends Component {
 
     }
     get() {
-        fetch('http://localhost:4000/blog', {
+        fetch('http://159.223.28.42:4000/blog', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -164,7 +164,7 @@ class EventsPage extends Component {
 
                                                     <div className="news-field">
                                                         <div className="news-image">
-                                                            <img src={'http://localhost:4000' + Object.get(item, 'image')} />
+                                                            <img src={'http://159.223.28.42:4000' + Object.get(item, 'image')} />
                                                         </div>
                                                         <div className="news-info">
                                                             <h5>{Object.translate(item, 'title', this.props.lang)}</h5>

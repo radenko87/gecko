@@ -123,7 +123,7 @@ class MenuPage extends Component {
     }
 
     get() {
-        // fetch('http://localhost:4000/blog', {
+        // fetch('http://159.223.28.42:4000/blog', {
         //     method: 'POST',
         //     headers: {
         //         'content-type': 'application/json'
@@ -196,7 +196,7 @@ class MenuPage extends Component {
                     <div className="lightbox-item padding540">
                         <div className="menu-item-view">
                             <div className="item-img">
-                                <img src={'http://localhost:4000' + Object.get(item, 'image')}/>
+                                <img src={'http://159.223.28.42:4000' + Object.get(item, 'image')}/>
                             </div>
                             <div className="item-description">
                                 <h4>{Object.translate(item, 'name', this.props.lang)}</h4>
@@ -242,7 +242,7 @@ class MenuPage extends Component {
                                                 }}
                                             >
                                                 <div className="menu-image">
-                                                    <Isvg src={'http://localhost:4000' + Object.get(item, 'image')}
+                                                    <Isvg src={'http://159.223.28.42:4000' + Object.get(item, 'image')}
 
                                                     />
                                                 </div>
@@ -270,7 +270,7 @@ class MenuPage extends Component {
                                                 <div className="menu-item">
                                                     <div className="item-img">
                                                         {/* <img src={meal} /> */}
-                                                        <img src={'http://localhost:4000' + Object.get(item, 'image')}
+                                                        <img src={'http://159.223.28.42:4000' + Object.get(item, 'image')}
                                                             onClick={() => {
                                                                 let index = 0;
                                                                 for (let i = 0; i < idx; i++) {
@@ -298,7 +298,7 @@ class MenuPage extends Component {
                                                 <div className="menu-item">
                                                     <div className="item-img">
                                                         {/* <img src={meal} /> */}
-                                                        <img src={'http://localhost:4000' + Object.get(item, 'image')}
+                                                        <img src={'http://159.223.28.42:4000' + Object.get(item, 'image')}
                                                             onClick={() => {
                                                                 let index = 0;
                                                                 for (let i = 0; i < idx; i++) {
@@ -368,7 +368,7 @@ class MenuPage extends Component {
                                             <Link lang={this.props.lang} to={`/veranstaltungen/${Object.translate(item, 'alias', this.props.lang)}`}>
                                                 <div className="news-field">
                                                     <div className="news-image">
-                                                        <img src={'http://localhost:4000' + Object.get(item, 'image')} />
+                                                        <img src={'http://159.223.28.42:4000' + Object.get(item, 'image')} />
                                                     </div>
                                                     <div className="news-info">
                                                         <h5>{Object.translate(item, 'title', this.props.lang)}</h5>

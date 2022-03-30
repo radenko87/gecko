@@ -109,7 +109,7 @@ class PagesListPage extends Component {
         this.setState({
             items: []
         }, () => {
-            fetch('http://localhost:4000/admin/fetch/' + this.props[0].match.params.collection, {
+            fetch('http://159.223.28.42:4000/admin/fetch/' + this.props[0].match.params.collection, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -131,7 +131,7 @@ class PagesListPage extends Component {
             return;
         }
 
-        fetch('http://localhost:4000/admin/delete/' + this.props[0].match.params.collection + '/' + id, {
+        fetch('http://159.223.28.42:4000/admin/delete/' + this.props[0].match.params.collection + '/' + id, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -146,7 +146,7 @@ class PagesListPage extends Component {
             return;
         }
 
-        fetch('http://localhost:4000/admin/newsNotification/' + id, {
+        fetch('http://159.223.28.42:4000/admin/newsNotification/' + id, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

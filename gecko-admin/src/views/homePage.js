@@ -24,7 +24,7 @@ class HomePage extends Component {
             return;
         }
 
-        fetch('http://localhost:4000/admin/home', {
+        fetch('http://159.223.28.42:4000/admin/home', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ class HomePage extends Component {
             return;
         }
 
-        fetch('http://localhost:4000/admin/home', {
+        fetch('http://159.223.28.42:4000/admin/home', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

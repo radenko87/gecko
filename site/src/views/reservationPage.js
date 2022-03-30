@@ -94,7 +94,7 @@ class ReservationPage extends Component {
         };
     }
     responseGoogle = (res) => {
-        fetch('http://localhost:4000/login/google', {
+        fetch('http://159.223.28.42:4000/login/google', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -104,7 +104,7 @@ class ReservationPage extends Component {
             })
         }).then((res) => res.json()).then((response) => {
             if (response.token) {
-                fetch('http://localhost:4000/reservations/send', {
+                fetch('http://159.223.28.42:4000/reservations/send', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -127,7 +127,7 @@ class ReservationPage extends Component {
 
         console.log(res);
 
-        fetch('http://localhost:4000/login/facebook', {
+        fetch('http://159.223.28.42:4000/login/facebook', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -137,7 +137,7 @@ class ReservationPage extends Component {
             })
         }).then((res) => res.json()).then((response) => {
             if (response.token) {
-                fetch('http://localhost:4000/reservations/send', {
+                fetch('http://159.223.28.42:4000/reservations/send', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -228,7 +228,7 @@ class ReservationPage extends Component {
             showLogin: true
         })
 
-        // fetch('http://localhost:4000/reservations/send', {
+        // fetch('http://159.223.28.42:4000/reservations/send', {
         //     method: 'POST',
         //     headers: {
         //         'Content-Type': 'application/json',
@@ -375,7 +375,7 @@ class ReservationPage extends Component {
                                             <Link lang={this.props.lang} to={`/veranstaltungen/${Object.translate(item, 'alias', this.props.lang)}`}>
                                                 <div className="news-field">
                                                     <div className="news-image">
-                                                        <img src={'http://localhost:4000' + Object.get(item, 'image')} />
+                                                        <img src={'http://159.223.28.42:4000' + Object.get(item, 'image')} />
                                                     </div>
                                                     <div className="news-info">
                                                         <h5>{Object.translate(item, 'title', this.props.lang)}</h5>

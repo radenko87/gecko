@@ -40,7 +40,7 @@ class AddPagePage extends Component {
     addPage(data) {
         console.log(data);
 
-        fetch('http://localhost:4000/admin/updateOne/' + this.props[0].match.params.collection + '/' + this.props[0].match.params.id, {
+        fetch('http://159.223.28.42:4000/admin/updateOne/' + this.props[0].match.params.collection + '/' + this.props[0].match.params.id, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -54,7 +54,7 @@ class AddPagePage extends Component {
 
     componentDidMount() {
         if (this.props[0].match.params.id != 'new') {
-            fetch('http://localhost:4000/admin/fetchOne/' + this.props[0].match.params.collection + '/' + this.props[0].match.params.id, {
+            fetch('http://159.223.28.42:4000/admin/fetchOne/' + this.props[0].match.params.collection + '/' + this.props[0].match.params.id, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ class AddPagePage extends Component {
 
 
 
-        fetch('http://localhost:4000/admin/fetch/pages', {
+        fetch('http://159.223.28.42:4000/admin/fetch/pages', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -83,7 +83,7 @@ class AddPagePage extends Component {
                 pages: result
             })
         })
-        fetch('http://localhost:4000/admin/fetch/categories', {
+        fetch('http://159.223.28.42:4000/admin/fetch/categories', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

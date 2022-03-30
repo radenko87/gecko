@@ -31,7 +31,7 @@ class Image extends Component {
             let formData = new FormData();
             formData.append('file', input.files[0]);
 
-            fetch('http://localhost:4000/admin/upload', {
+            fetch('http://159.223.28.42:4000/admin/upload', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',
@@ -65,7 +65,7 @@ class Image extends Component {
                         <div className="image-picker single-image-picker">
                             <input type="file" onChange={this.selectFile} />
                             {this.props.value ?
-                                <img src={'http://localhost:4000' +this.props.value} />
+                                <img src={'http://159.223.28.42:4000' +this.props.value} />
                                 :
                                 <div className="no-image">
                                     <Isvg src={ image} />

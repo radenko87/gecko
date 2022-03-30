@@ -107,7 +107,7 @@ class AboutUsPage extends Component {
                                             <Link lang={this.props.lang} to={`/veranstaltungen/${Object.translate(item, 'alias', this.props.lang)}`}>
                                                 <div className="news-field">
                                                     <div className="news-image">
-                                                        <img src={'http://localhost:4000' + Object.get(item, 'image')} />
+                                                        <img src={'http://159.223.28.42:4000' + Object.get(item, 'image')} />
                                                     </div>
                                                     <div className="news-info">
                                                         <h5>{Object.translate(item, 'title', this.props.lang)}</h5>

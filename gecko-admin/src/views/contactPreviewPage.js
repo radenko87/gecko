@@ -24,7 +24,7 @@ class ContactPreviewPage extends Component {
         }
 
         if (this.props[0].match.params.id) {
-            fetch('http://localhost:4000/admin/fetchOne/contacts/' + this.props[0].match.params.id, {
+            fetch('http://159.223.28.42:4000/admin/fetchOne/contacts/' + this.props[0].match.params.id, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

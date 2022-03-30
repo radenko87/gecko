@@ -43,7 +43,7 @@ class SortPage extends Component {
         this.setState({
             items: []
         }, () => {
-            fetch('http://localhost:4000/admin/projects', {
+            fetch('http://159.223.28.42:4000/admin/projects', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ class SortPage extends Component {
 
     save() {
 
-        fetch('http://localhost:4000/admin/projects/sort', {
+        fetch('http://159.223.28.42:4000/admin/projects/sort', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

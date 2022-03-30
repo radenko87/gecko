@@ -51,7 +51,7 @@ class ReservationsPage extends Component {
             return;
         }
 
-        fetch('http://localhost:4000/admin/reservations', {
+        fetch('http://159.223.28.42:4000/admin/reservations', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ class ReservationsPage extends Component {
             return;
         }
 
-        fetch('http://localhost:4000/admin/allowReservation/' + id, {
+        fetch('http://159.223.28.42:4000/admin/allowReservation/' + id, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

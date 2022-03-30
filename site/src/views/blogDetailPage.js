@@ -82,7 +82,7 @@ class BlogDetailPage extends Component {
                                     </div>
                                     <div className="image">
                                         {/* <img src={news} /> */}
-                                        <img src={'http://localhost:4000' + Object.get(this.state.data, 'image')} />
+                                        <img src={'http://159.223.28.42:4000' + Object.get(this.state.data, 'image')} />
                                     </div>
                                     <div className="content">
                                         <p>
@@ -104,7 +104,7 @@ class BlogDetailPage extends Component {
 
                                                         <div className="news-field">
                                                             <div className="news-image">
-                                                                <img src={'http://localhost:4000' + Object.get(item, 'image')} />
+                                                                <img src={'http://159.223.28.42:4000' + Object.get(item, 'image')} />
                                                             </div>
                                                             <div className="news-info">
                                                                 <h5>{Object.translate(item, 'title', this.props.lang)}</h5>

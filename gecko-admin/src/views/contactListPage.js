@@ -37,7 +37,7 @@ class ContactListPage extends Component {
             return;
         }
 
-        fetch('http://localhost:4000/admin/fetch/contacts', {
+        fetch('http://159.223.28.42:4000/admin/fetch/contacts', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -58,7 +58,7 @@ class ContactListPage extends Component {
             return;
         }
 
-        fetch('http://localhost:4000/admin/delete/contacts/' + id, {
+        fetch('http://159.223.28.42:4000/admin/delete/contacts/' + id, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

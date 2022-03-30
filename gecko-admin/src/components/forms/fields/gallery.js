@@ -175,7 +175,7 @@ class Gallery extends Component {
                 });
             }*/
             let name = this.state.files.length + i;
-            fetch('http://localhost:4000/admin/upload', {
+            fetch('http://159.223.28.42:4000/admin/upload', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',

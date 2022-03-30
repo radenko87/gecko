@@ -32,7 +32,7 @@ class HtmlImage extends Component {
             this.setState({
                 _loading: true
             })
-            fetch('http://localhost:4000/admin/upload', {
+            fetch('http://159.223.28.42:4000/admin/upload', {
                 method: 'POST',
                 headers: {
                     Accept: 'application/json',

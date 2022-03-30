@@ -24,7 +24,7 @@ class InformationPage extends Component {
             return;
         }
 
-        fetch('http://localhost:4000/admin/information', {
+        fetch('http://159.223.28.42:4000/admin/information', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ class InformationPage extends Component {
             return;
         }
 
-        fetch('http://localhost:4000/admin/information', {
+        fetch('http://159.223.28.42:4000/admin/information', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -88,7 +88,7 @@ class HomePage extends Component {
                         </Col>
                         <Col lg="7" xs="7">
                             <div className="home-image">
-                                <img src={'http://localhost:4000' + Object.get(this.state.data, 'section[0].image')} />
+                                <img src={'http://159.223.28.42:4000' + Object.get(this.state.data, 'section[0].image')} />
                             </div>
                         </Col>
                     </Row>
@@ -126,7 +126,7 @@ class HomePage extends Component {
                                                     <Link lang={this.props.lang} to="/menu" lang={this.props.lang}>
                                                         <div className="offer">
                                                             <div className="offer-image">
-                                                                <img src={'http://localhost:4000' + Object.get(item, 'image')} />
+                                                                <img src={'http://159.223.28.42:4000' + Object.get(item, 'image')} />
                                                             </div>
                                                             <div className="offer-text">
                                                                 <h5>{Object.translate(item, 'name', this.props.lang)}</h5>
@@ -151,7 +151,7 @@ class HomePage extends Component {
                     <Row>
                         <Col lg="7"  xs="7">
                             <div className="plate">
-                                <img src={'http://localhost:4000' + Object.get(this.state.data, 'section[1].image')} />
+                                <img src={'http://159.223.28.42:4000' + Object.get(this.state.data, 'section[1].image')} />
                             </div>
 
                         </Col>
@@ -187,7 +187,7 @@ class HomePage extends Component {
                                         <div className="menu-field">
                                             <Link lang={this.props.lang} to="/menu">
                                                 <div className="menu-image">
-                                                    <Isvg src={'http://localhost:4000' + Object.get(item, 'image')} />
+                                                    <Isvg src={'http://159.223.28.42:4000' + Object.get(item, 'image')} />
                                                 </div>
 
                                                 <div className="field-text">
@@ -219,7 +219,7 @@ class HomePage extends Component {
                         </Col>
                         <Col lg={{ size: 6, offset: 1, order: 1 }}  xs={{size: 7, offset: 0, order: 0}}>
                             <div className="plate">
-                                <img src={'http://localhost:4000' + Object.get(this.state.data, 'section[2].image')} />
+                                <img src={'http://159.223.28.42:4000' + Object.get(this.state.data, 'section[2].image')} />
                             </div>
                         </Col>
                     </Row>
@@ -242,7 +242,7 @@ class HomePage extends Component {
                                         <Link lang={this.props.lang} to={`/veranstaltungen/${Object.translate(item, 'alias', this.props.lang)}`}>
                                             <div className="news-field">
                                                 <div className="news-image">
-                                                    <img src={'http://localhost:4000' + Object.get(item, 'image')} />
+                                                    <img src={'http://159.223.28.42:4000' + Object.get(item, 'image')} />
                                                 </div>
                                                 <div className="news-info">
                                                     <h5>{Object.translate(item, 'title', this.props.lang)}</h5>

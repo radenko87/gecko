@@ -84,7 +84,7 @@ class Tables extends Component {
             return;
         }
 
-        fetch('http://localhost:4000/admin/fetch/tables', {
+        fetch('http://159.223.28.42:4000/admin/fetch/tables', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -113,7 +113,7 @@ class Tables extends Component {
             return;
         }
 
-        fetch('http://localhost:4000/admin/updateOne/tables/' + (this.state._selectedTable ? this.state._selectedTable._id : 'new'), {
+        fetch('http://159.223.28.42:4000/admin/updateOne/tables/' + (this.state._selectedTable ? this.state._selectedTable._id : 'new'), {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -150,7 +150,7 @@ class Tables extends Component {
 
 
         for (let i = 0; i < this.state.items.length; i++) {
-            fetch('http://localhost:4000/admin/updateOne/tables/' + this.state.items[i]._id, {
+            fetch('http://159.223.28.42:4000/admin/updateOne/tables/' + this.state.items[i]._id, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

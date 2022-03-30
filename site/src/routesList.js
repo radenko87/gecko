@@ -35,14 +35,14 @@ export const routes = [
             return {
                 title: 'Početna'.translate(lang) + ' - GECKO | Sajtović Gastronomie & Event'.translate(lang),
                 description: 'GECKO | Sajtović Gastronomie & Event'.translate(lang),
-                'og:image': 'http://localhost:4000/uploads/share.png'
+                'og:image': 'http://159.223.28.42:4000/uploads/share.png'
             }
         },
 
         component: HomePage,
         loadData: [
             (fetchFunction, lang, match) => {
-                return fetchFunction('http://localhost:4000/home', {
+                return fetchFunction('http://159.223.28.42:4000/home', {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
@@ -55,7 +55,7 @@ export const routes = [
 
             },
             (fetchFunction, lang, match) => {
-                return fetchFunction('http://localhost:4000/items', {
+                return fetchFunction('http://159.223.28.42:4000/items', {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
@@ -68,7 +68,7 @@ export const routes = [
 
             },
             (fetchFunction, lang, match) => {
-                return fetchFunction('http://localhost:4000/blog/latest', {
+                return fetchFunction('http://159.223.28.42:4000/blog/latest', {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
@@ -83,7 +83,7 @@ export const routes = [
 
             },
             (fetchFunction, lang, match) => {
-                return fetchFunction('http://localhost:4000/categories', {
+                return fetchFunction('http://159.223.28.42:4000/categories', {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
@@ -105,14 +105,14 @@ export const routes = [
             return {
                 title: 'O nama'.translate(lang) + ' - GECKO | Sajtović Gastronomie & Event'.translate(lang),
                 description: 'GECKO | Sajtović Gastronomie & Event'.translate(lang),
-                'og:image': 'http://localhost:4000/uploads/share.png'
+                'og:image': 'http://159.223.28.42:4000/uploads/share.png'
             }
         },
 
         component: AboutUsPage,
         loadData: [
             (fetchFunction, lang, match) => {
-                return fetchFunction('http://localhost:4000/aboutus', {
+                return fetchFunction('http://159.223.28.42:4000/aboutus', {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
@@ -125,7 +125,7 @@ export const routes = [
 
             },
             (fetchFunction, lang, match) => {
-                return fetchFunction('http://localhost:4000/blog/latest', {
+                return fetchFunction('http://159.223.28.42:4000/blog/latest', {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
@@ -152,14 +152,14 @@ export const routes = [
             return {
                 title: 'Događaji'.translate(lang) + ' - GECKO | Sajtović Gastronomie & Event'.translate(lang),
                 description: 'GECKO | Sajtović Gastronomie & Event'.translate(lang),
-                'og:image': 'http://localhost:4000/uploads/share.png'
+                'og:image': 'http://159.223.28.42:4000/uploads/share.png'
             }
         },
 
         component: EventsPage,
         loadData: [
             // (fetchFunction, lang, match) => {
-            //     return fetchFunction('http://localhost:4000/blog/latest', {
+            //     return fetchFunction('http://159.223.28.42:4000/blog/latest', {
             //         method: 'GET',
             //         headers: {
             //             'content-type': 'application/json'
@@ -176,7 +176,7 @@ export const routes = [
         ],
         loadDataWithQuery: [
             (fetchFunction, lang, match, query) => {
-                return fetchFunction('http://localhost:4000/blog', {
+                return fetchFunction('http://159.223.28.42:4000/blog', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
@@ -204,7 +204,7 @@ export const routes = [
             return {
                 title: 'Jelovnik'.translate(lang) + ' - GECKO | Sajtović Gastronomie & Event'.translate(lang),
                 description: 'GECKO | Sajtović Gastronomie & Event'.translate(lang),
-                'og:image': 'http://localhost:4000/uploads/share.png'
+                'og:image': 'http://159.223.28.42:4000/uploads/share.png'
             }
         },
 
@@ -212,7 +212,7 @@ export const routes = [
         loadData: [
             
             (fetchFunction, lang, match) => {
-                return fetchFunction('http://localhost:4000/categories', {
+                return fetchFunction('http://159.223.28.42:4000/categories', {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
@@ -225,7 +225,7 @@ export const routes = [
 
             },
             (fetchFunction, lang, match) => {
-                return fetchFunction('http://localhost:4000/items', {
+                return fetchFunction('http://159.223.28.42:4000/items', {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
@@ -238,7 +238,7 @@ export const routes = [
 
             },
             (fetchFunction, lang, match) => {
-                return fetchFunction('http://localhost:4000/blog/latest', {
+                return fetchFunction('http://159.223.28.42:4000/blog/latest', {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
@@ -256,7 +256,7 @@ export const routes = [
         ],
         loadDataWithQuery: [
             // (fetchFunction, lang, match, query) => {
-            //     return fetchFunction('http://localhost:4000/blog', {
+            //     return fetchFunction('http://159.223.28.42:4000/blog', {
             //         method: 'POST',
             //         headers: {
             //             'content-type': 'application/json'
@@ -284,7 +284,7 @@ export const routes = [
             return {
                 title: 'Rezervacija stola'.translate(lang) + ' - GECKO | Sajtović Gastronomie & Event'.translate(lang),
                 description: 'GECKO | Sajtović Gastronomie & Event'.translate(lang),
-                'og:image': 'http://localhost:4000/uploads/share.png'
+                'og:image': 'http://159.223.28.42:4000/uploads/share.png'
             }
         },
 
@@ -292,7 +292,7 @@ export const routes = [
         loadData: [
 
             (fetchFunction, lang, match) => {
-                return fetchFunction('http://localhost:4000/blog/latest', {
+                return fetchFunction('http://159.223.28.42:4000/blog/latest', {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
@@ -307,7 +307,7 @@ export const routes = [
 
             },
             (fetchFunction, lang, match) => {
-                return fetchFunction('http://localhost:4000/tables', {
+                return fetchFunction('http://159.223.28.42:4000/tables', {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
@@ -325,7 +325,7 @@ export const routes = [
         ],
         loadDataWithQuery: [
             // (fetchFunction, lang, match, query) => {
-            //     return fetchFunction('http://localhost:4000/blog', {
+            //     return fetchFunction('http://159.223.28.42:4000/blog', {
             //         method: 'POST',
             //         headers: {
             //             'content-type': 'application/json'
@@ -354,14 +354,14 @@ export const routes = [
             return {
                 title: Object.translate(data, 'data.title', lang) + ' | '  +  'Događaji'.translate(lang) + ' - GECKO | Sajtović Gastronomie & Event'.translate(lang),
                 description: Object.translate(data, 'data.shortDescriprion', lang),
-                'og:image': 'http://localhost:4000' + Object.get(data, 'data.image')
+                'og:image': 'http://159.223.28.42:4000' + Object.get(data, 'data.image')
             }
         },
 
         component: BlogDetailPage,
         loadData: [
             (fetchFunction, lang, match) => {
-                return fetchFunction('http://localhost:4000/blog/latest', {
+                return fetchFunction('http://159.223.28.42:4000/blog/latest', {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
@@ -376,7 +376,7 @@ export const routes = [
 
             },
             (fetchFunction, lang, match) => {
-                return fetchFunction(`http://localhost:4000/blog/detail/${lang}/${match.params.alias}`, {
+                return fetchFunction(`http://159.223.28.42:4000/blog/detail/${lang}/${match.params.alias}`, {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
@@ -405,14 +405,14 @@ export const routes = [
             return {
                 title: 'Kontakt'.translate(lang) + ' - GECKO | Sajtović Gastronomie & Event'.translate(lang),
                 description: 'GECKO | Sajtović Gastronomie & Event'.translate(lang),
-                'og:image': 'http://localhost:4000/uploads/share.png'
+                'og:image': 'http://159.223.28.42:4000/uploads/share.png'
             }
         },
 
         component: ContactPage,
         loadData: [
             (fetchFunction, lang, match) => {
-                return fetchFunction(`http://localhost:4000/informations`, {
+                return fetchFunction(`http://159.223.28.42:4000/informations`, {
                     method: 'GET',
                     headers: {
                         'content-type': 'application/json'
