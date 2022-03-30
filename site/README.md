@@ -28,7 +28,7 @@ cd my-app
 npm start
 ```
 
-Then open http://localhost:3000/ to see your app. Your console should look like this:
+Then open http://159.223.28.42:3000/ to see your app. Your console should look like this:
 
 <img src="https://cloud.githubusercontent.com/assets/4060187/26324663/b31788c4-3f01-11e7-8e6f-ffa48533af54.png" width="500px" alt="Razzle Development Mode"/>
 
@@ -39,7 +39,7 @@ Below is a list of commands you will probably find useful.
 ### `npm start` or `yarn start`
 
 Runs the project in development mode.  
-You can view your application at `http://localhost:3000`
+You can view your application at `http://159.223.28.42:3000`
 
 The page will reload if you make edits.
 
@@ -54,7 +54,7 @@ Your app is ready to be deployed!
 
 Runs the compiled app in production.
 
-You can again view your application at `http://localhost:3000`
+You can again view your application at `http://159.223.28.42:3000`
 
 ### `npm test` or `yarn test`
 
@@ -216,7 +216,7 @@ Please refer to the [dotenv documentation](https://github.com/motdotla/dotenv) f
 
 **tl;dr**: 2 configs, 2 ports, 2 webpack instances, both watching and hot reloading the same filesystem, in parallel during development and a little `webpack.output.publicPath` magic.
 
-In development mode (`razzle start`), Razzle bundles both your client and server code using two different webpack instances running with Hot Module Replacement in parallel. While your server is bundled and run on whatever port your specify in `src/index.js` (`3000` is the default), the client bundle (i.e. entry point at `src/client.js`) is served via `webpack-dev-server` on a different port (`3001` by default) with its `publicPath` explicitly set to `localhost:3001` (and not `/` like many other setups do). Then the server's html template just points to the absolute url of the client JS: `localhost:3001/static/js/client.js`. Since both webpack instances watch the same files, whenever you make edits, they hot reload at _exactly_ the same time. Best of all, because they use the same code, the same webpack loaders, and the same babel transformations, you never run into a React checksum mismatch error.
+In development mode (`razzle start`), Razzle bundles both your client and server code using two different webpack instances running with Hot Module Replacement in parallel. While your server is bundled and run on whatever port your specify in `src/index.js` (`3000` is the default), the client bundle (i.e. entry point at `src/client.js`) is served via `webpack-dev-server` on a different port (`3001` by default) with its `publicPath` explicitly set to `159.223.28.42:3001` (and not `/` like many other setups do). Then the server's html template just points to the absolute url of the client JS: `159.223.28.42:3001/static/js/client.js`. Since both webpack instances watch the same files, whenever you make edits, they hot reload at _exactly_ the same time. Best of all, because they use the same code, the same webpack loaders, and the same babel transformations, you never run into a React checksum mismatch error.
 
 ## Inspiration
 
